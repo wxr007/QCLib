@@ -8,7 +8,7 @@ QCLib 的主干版本目录 创建时间2015-03-19
     暂时，完成的功能：第三方库封装；服务器架构逻辑管理层（中间接口层）。
 
 二、第三方库封装
-1、说明：第三方库，选择的是muduo，主要是基于Linux的网络、线程库。下载地址为“http://code.google.com/p/muduo/”。
+1、说明：第三方库，选择的是muduo，主要是基于Linux的网络、线程库。下载地址为 http://code.google.com/p/muduo/ 。
 2、基于muduo库，主要封装了2个类：CTcpClient/CTcpServer;
     2-1、CTcpClient，相关文件有tcp_client.cpp/h；
 	    主要功能，就是创建一个客户端，去连接要求的服务器；然后，就是进行数据通信.
