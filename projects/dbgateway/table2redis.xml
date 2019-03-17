@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+t_name：表名称
+r_key_prefix：redis key的前缀(key = 前缀 + 分隔符 + 表主键) 
+t_primary_key_field：表主键字段名
+r_key_separator：redis主键分隔符
+
+t_field：表字段名
+r_field：redis字段名
+
+-->
+
+<tables>
+	<table t_name="player" r_key_prefix="player" t_primary_key_field="account" r_key_separator=":" >
+		<field t_field="account" r_field="account" />
+		<field t_field="username" r_field="username" />
+		<field t_field="deleted" r_field="deleted" />
+		<field t_field="userid" r_field="userid" />
+		<field t_field="useronlyid" r_field="useronlyid" />
+		<field t_field="bindata" r_field="bindata" />
+		<field t_field="textdata" r_field="textdata" />
+	</table>
+	<table t_name="goods" r_key_prefix="goods" t_primary_key_field="idx" r_key_separator=":" >
+		<field t_field="attr" r_field="r_attr" />
+		<field t_field="count" r_field="r_count" />
+		<field t_field="idx" r_field="r_idx" />
+		<field t_field="name" r_field="r_name" />
+	</table>
+	<table t_name="player_data_table" r_key_prefix="player_data" t_primary_key_field="object_id" r_key_separator=":" bindItem="user_id:player_name">
+		<field t_field="object_id" r_field="m_object_id" />
+		<field t_field="user_id" r_field="m_user_id" />
+		<field t_field="player_name" r_field="m_player_name" />
+		<field t_field="playerLevel" r_field="m_playerLevel" />
+		<field t_field="playerJob" r_field="m_playerJob" />
+		<field t_field="playerCountry" r_field="m_playerCountry" />
+		<field t_field="lastLoginTime" r_field="m_lastLoginTime" />
+	</table>
+	<table t_name="temporary_record" r_key_prefix="r_temporary_record" t_primary_key_field="key_name" r_key_separator=":" >
+		<field t_field="key_name" r_field="key_name" />
+		<field t_field="key_value" r_field="key_value" />
+	</table>
+</tables>
+<!--
+
+set player_data_table:user_id:v
+	object_id_v1
+	object_id_v2
+set player_data_table:player_name:v
+	object_id_v1
+	object_id_v2
+	
+object_id_v1
+ u_v1
+ pn_v1
+	
+object_id_v2
+-->
+	

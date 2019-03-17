@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D3A5F6B-569A-49C0-BD19-ABD9C9E72857}</ProjectGuid>
+    <RootNamespace>muduo</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\base\AsyncLogging.cc" />
+    <ClCompile Include="..\base\Condition.cc" />
+    <ClCompile Include="..\base\CountDownLatch.cc" />
+    <ClCompile Include="..\base\Date.cc" />
+    <ClCompile Include="..\base\Exception.cc" />
+    <ClCompile Include="..\base\FileUtil.cc" />
+    <ClCompile Include="..\base\LogFile.cc" />
+    <ClCompile Include="..\base\Logging.cc" />
+    <ClCompile Include="..\base\LogStream.cc" />
+    <ClCompile Include="..\base\ProcessInfo.cc" />
+    <ClCompile Include="..\base\Thread.cc" />
+    <ClCompile Include="..\base\ThreadPool.cc" />
+    <ClCompile Include="..\base\Timestamp.cc" />
+    <ClCompile Include="..\base\TimeZone.cc" />
+    <ClCompile Include="..\base\tests\AsyncLogging_test.cc" />
+    <ClCompile Include="..\base\tests\Atomic_unittest.cc" />
+    <ClCompile Include="..\base\tests\BlockingQueue_bench.cc" />
+    <ClCompile Include="..\base\tests\BlockingQueue_test.cc" />
+    <ClCompile Include="..\base\tests\BoundedBlockingQueue_test.cc" />
+    <ClCompile Include="..\base\tests\Date_unittest.cc" />
+    <ClCompile Include="..\base\tests\Exception_test.cc" />
+    <ClCompile Include="..\base\tests\FileUtil_test.cc" />
+    <ClCompile Include="..\base\tests\Fork_test.cc" />
+    <ClCompile Include="..\base\tests\GzipFile_test.cc" />
+    <ClCompile Include="..\base\tests\LogFile_test.cc" />
+    <ClCompile Include="..\base\tests\Logging_test.cc" />
+    <ClCompile Include="..\base\tests\LogStream_bench.cc" />
+    <ClCompile Include="..\base\tests\LogStream_test.cc" />
+    <ClCompile Include="..\base\tests\Mutex_test.cc" />
+    <ClCompile Include="..\base\tests\ProcessInfo_test.cc" />
+    <ClCompile Include="..\base\tests\Singleton_test.cc" />
+    <ClCompile Include="..\base\tests\SingletonThreadLocal_test.cc" />
+    <ClCompile Include="..\base\tests\Thread_bench.cc" />
+    <ClCompile Include="..\base\tests\Thread_test.cc" />
+    <ClCompile Include="..\base\tests\ThreadLocal_test.cc" />
+    <ClCompile Include="..\base\tests\ThreadLocalSingleton_test.cc" />
+    <ClCompile Include="..\base\tests\ThreadPool_test.cc" />
+    <ClCompile Include="..\base\tests\Timestamp_unittest.cc" />
+    <ClCompile Include="..\base\tests\TimeZone_unittest.cc" />
+    <ClCompile Include="..\net\Acceptor.cc" />
+    <ClCompile Include="..\net\boilerplate.cc" />
+    <ClCompile Include="..\net\Buffer.cc" />
+    <ClCompile Include="..\net\Channel.cc" />
+    <ClCompile Include="..\net\Connector.cc" />
+    <ClCompile Include="..\net\EventLoop.cc" />
+    <ClCompile Include="..\net\EventLoopThread.cc" />
+    <ClCompile Include="..\net\EventLoopThreadPool.cc" />
+    <ClCompile Include="..\net\InetAddress.cc" />
+    <ClCompile Include="..\net\Poller.cc" />
+    <ClCompile Include="..\net\Socket.cc" />
+    <ClCompile Include="..\net\SocketsOps.cc" />
+    <ClCompile Include="..\net\TcpClient.cc" />
+    <ClCompile Include="..\net\TcpConnection.cc" />
+    <ClCompile Include="..\net\TcpServer.cc" />
+    <ClCompile Include="..\net\Timer.cc" />
+    <ClCompile Include="..\net\TimerQueue.cc" />
+    <ClCompile Include="..\net\tests\Buffer_unittest.cc" />
+    <ClCompile Include="..\net\tests\EchoClient_unittest.cc" />
+    <ClCompile Include="..\net\tests\EchoServer_unittest.cc" />
+    <ClCompile Include="..\net\tests\EventLoop_unittest.cc" />
+    <ClCompile Include="..\net\tests\EventLoopThread_unittest.cc" />
+    <ClCompile Include="..\net\tests\EventLoopThreadPool_unittest.cc" />
+    <ClCompile Include="..\net\tests\InetAddress_unittest.cc" />
+    <ClCompile Include="..\net\tests\TcpClient_reg1.cc" />
+    <ClCompile Include="..\net\tests\TcpClient_reg2.cc" />
+    <ClCompile Include="..\net\tests\TcpClient_reg3.cc" />
+    <ClCompile Include="..\net\tests\TimerQueue_unittest.cc" />
+    <ClCompile Include="..\net\tests\ZlibStream_unittest.cc" />
+    <ClCompile Include="..\net\http\HttpResponse.cc" />
+    <ClCompile Include="..\net\http\HttpServer.cc" />
+    <ClCompile Include="..\net\http\tests\HttpRequest_unittest.cc" />
+    <ClCompile Include="..\net\http\tests\HttpServer_test.cc" />
+    <ClCompile Include="..\net\http2\GateWaySvr.cpp" />
+    <ClCompile Include="..\net\http2\MyHttpServer.cpp" />
+    <ClCompile Include="..\net\http2\MyTcpClient.cpp" />
+    <ClCompile Include="..\net\http2\MyTcpServer.cpp" />
+    <ClCompile Include="..\net\http2\test\httpsvr_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\base\AsyncLogging.h" />
+    <ClInclude Include="..\base\Atomic.h" />
+    <ClInclude Include="..\base\BlockingQueue.h" />
+    <ClInclude Include="..\base\BoundedBlockingQueue.h" />
+    <ClInclude Include="..\base\Condition.h" />
+    <ClInclude Include="..\base\copyable.h" />
+    <ClInclude Include="..\base\CountDownLatch.h" />
+    <ClInclude Include="..\base\CurrentThread.h" />
+    <ClInclude Include="..\base\Date.h" />
+    <ClInclude Include="..\base\Exception.h" />
+    <ClInclude Include="..\base\FileUtil.h" />
+    <ClInclude Include="..\base\GzipFile.h" />
+    <ClInclude Include="..\base\LogFile.h" />
+    <ClInclude Include="..\base\Logging.h" />
+    <ClInclude Include="..\base\LogStream.h" />
+    <ClInclude Include="..\base\Mutex.h" />
+    <ClInclude Include="..\base\ProcessInfo.h" />
+    <ClInclude Include="..\base\Singleton.h" />
+    <ClInclude Include="..\base\StringPiece.h" />
+    <ClInclude Include="..\base\Thread.h" />
+    <ClInclude Include="..\base\ThreadLocal.h" />
+    <ClInclude Include="..\base\ThreadLocalSingleton.h" />
+    <ClInclude Include="..\base\ThreadPool.h" />
+    <ClInclude Include="..\base\Timestamp.h" />
+    <ClInclude Include="..\base\TimeZone.h" />
+    <ClInclude Include="..\base\Types.h" />
+    <ClInclude Include="..\base\WeakCallback.h" />
+    <ClInclude Include="..\net\Acceptor.h" />
+    <ClInclude Include="..\net\boilerplate.h" />
+    <ClInclude Include="..\net\Buffer.h" />
+    <ClInclude Include="..\net\Callbacks.h" />
+    <ClInclude Include="..\net\Channel.h" />
+    <ClInclude Include="..\net\Connector.h" />
+    <ClInclude Include="..\net\Endian.h" />
+    <ClInclude Include="..\net\EventLoop.h" />
+    <ClInclude Include="..\net\EventLoopThread.h" />
+    <ClInclude Include="..\net\EventLoopThreadPool.h" />
+    <ClInclude Include="..\net\InetAddress.h" />
+    <ClInclude Include="..\net\Poller.h" />
+    <ClInclude Include="..\net\Socket.h" />
+    <ClInclude Include="..\net\SocketsOps.h" />
+    <ClInclude Include="..\net\TcpClient.h" />
+    <ClInclude Include="..\net\TcpConnection.h" />
+    <ClInclude Include="..\net\TcpServer.h" />
+    <ClInclude Include="..\net\Timer.h" />
+    <ClInclude Include="..\net\TimerId.h" />
+    <ClInclude Include="..\net\TimerQueue.h" />
+    <ClInclude Include="..\net\ZlibStream.h" />
+    <ClInclude Include="..\net\http\HttpContext.h" />
+    <ClInclude Include="..\net\http\HttpRequest.h" />
+    <ClInclude Include="..\net\http\HttpResponse.h" />
+    <ClInclude Include="..\net\http\HttpServer.h" />
+    <ClInclude Include="..\net\http2\GateWaySvr.hpp" />
+    <ClInclude Include="..\net\http2\MyHttpServer.hpp" />
+    <ClInclude Include="..\net\http2\MyTcpClient.hpp" />
+    <ClInclude Include="..\net\http2\MyTcpServer.hpp" />
+    <ClInclude Include="..\net\http2\test\GolbalDefine.h" />
+    <ClInclude Include="..\net\http2\test\httpDefine.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

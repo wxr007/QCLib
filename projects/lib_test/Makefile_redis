@@ -1,0 +1,36 @@
+CXX=g++
+CFLAG=-c -g -D_USE_MUDUO_LIB__
+DEBUG=
+
+INC =  -I/root/muduo-master/  -I../../commonsrc/deps/hiredis -I../../commonsrc/include -I../proto
+OBJ=./.obj
+BIN=.
+SRC=.
+LIB_DIR=-L../../commonsrc/libs -L/root/build/release/lib -L../../commonsrc/deps/hiredis -L/usr/local/lib
+LDFLAG=-lQCool -lmuduo_net -lmuduo_base -lhiredis -lpthread -Wl,-Bstatic -lprotobuf -Wl,-Bdynamic -Wl,--as-needed
+LD=g++
+
+TARGET= redis_client
+
+TARGETOBJS=$(OBJ)/redis_client_test.o 
+           
+
+all:createdir MakeTarget
+
+createdir:
+	test -d $(OBJ) || mkdir -p $(OBJ)
+
+clean:
+	rm -f $(BIN)/$(TARGET)
+	rm -f $(OBJ)/*
+
+	
+$(OBJ)/redis_client_test.o:$(SRC)/redis_client_test.cpp
+	$(CXX) $(CFLAG) $(INC) $(SRC)/redis_client_test.cpp -o $(OBJ)/redis_client_test.o
+		
+		
+		
+#-------------LINK------------------------------
+
+MakeTarget:$(TARGETOBJS)
+	$(LD) $(TARGETOBJS) -o $(TARGET) $(LIB_DIR) $(LDFLAG)  

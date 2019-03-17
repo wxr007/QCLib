@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D6073DF-591D-41D2-963D-B1E9734FA09D}</ProjectGuid>
+    <RootNamespace>CommonLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\commonsrc\src\thread_info.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\http_server.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\tcp_client.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\tcp_module.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\tcp_server.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\file_writer.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\lib_init_for_muduo.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\log_for_muduo.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\logger.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\thread.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\db_cache.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\redis_client.cpp" />
+    <ClCompile Include="..\..\..\..\commonsrc\src\md5.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\commonsrc\include\base_define.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\containers_define.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\hash_define.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\lib_init.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\nosql_define.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\server_cmd.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\thread_info.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\http_define.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\http_server.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\tcp_client.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\tcp_module.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\tcp_server.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\file_system.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\file_writer.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\function_for_muduo.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\log_adaptor.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\logger.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\atomic.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\singleton.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\thread.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\db_cache.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\hiredis_with_muduo.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\redis_client.h" />
+    <ClInclude Include="..\..\..\..\commonsrc\include\md5.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

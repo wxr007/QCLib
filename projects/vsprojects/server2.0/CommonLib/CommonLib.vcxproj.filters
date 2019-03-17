@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\net">
+      <UniqueIdentifier>{66db54bb-2d5c-485a-b7e3-4b8229f500fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\log">
+      <UniqueIdentifier>{804b29e4-d8db-4842-8be6-69c441cf5889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\base">
+      <UniqueIdentifier>{0f0e441b-91ab-4b8f-a1fd-c59bc5a8d965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DBCache">
+      <UniqueIdentifier>{bf477f50-1a38-44ba-8e40-dcecbd2afa6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\encrypt">
+      <UniqueIdentifier>{67083a2d-5023-47ae-9a15-937fd0ab9543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\net">
+      <UniqueIdentifier>{47aa0d2b-2540-474f-92cc-092425ede467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\log">
+      <UniqueIdentifier>{66ee6828-8cb8-430a-a1df-ba55fbc80378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\base">
+      <UniqueIdentifier>{9b15d899-9b13-461d-92ee-f4c2960fbd5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DBCache">
+      <UniqueIdentifier>{7918e2e9-82fc-4b55-88f2-41324c4bc3c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\encrypt">
+      <UniqueIdentifier>{9194477e-cdce-4fcc-a25a-e84e17fb0028}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\commonsrc\src\thread_info.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\http_server.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\tcp_client.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\tcp_module.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\tcp_server.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\file_writer.cpp">
+      <Filter>源文件\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\lib_init_for_muduo.cpp">
+      <Filter>源文件\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\log_for_muduo.cpp">
+      <Filter>源文件\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\logger.cpp">
+      <Filter>源文件\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\thread.cpp">
+      <Filter>源文件\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\db_cache.cpp">
+      <Filter>源文件\DBCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\redis_client.cpp">
+      <Filter>源文件\DBCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\commonsrc\src\md5.cpp">
+      <Filter>源文件\encrypt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\commonsrc\include\base_define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\containers_define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\hash_define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\lib_init.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\server_cmd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\thread_info.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\http_define.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\http_server.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\tcp_client.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\tcp_module.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\tcp_server.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\file_system.h">
+      <Filter>头文件\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\file_writer.h">
+      <Filter>头文件\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\function_for_muduo.h">
+      <Filter>头文件\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\log_adaptor.h">
+      <Filter>头文件\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\logger.h">
+      <Filter>头文件\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\atomic.h">
+      <Filter>头文件\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\singleton.h">
+      <Filter>头文件\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\thread.h">
+      <Filter>头文件\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\db_cache.h">
+      <Filter>头文件\DBCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\hiredis_with_muduo.h">
+      <Filter>头文件\DBCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\redis_client.h">
+      <Filter>头文件\DBCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\md5.h">
+      <Filter>头文件\encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\commonsrc\include\nosql_define.h">
+      <Filter>头文件\DBCache</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

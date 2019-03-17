@@ -1,0 +1,41 @@
+CXX=g++
+CFLAG=-c -g -D_USE_MUDUO_LIB__
+DEBUG=
+
+PROTOBUFINC=-I../../commonsrc/deps/protobuff
+PROTOINC=-I../proto 
+PROTOSRC=../proto
+REDISINC= -I../../commonsrc/deps/hiredis
+JSONINC=-I../../commonsrc/deps/jsoncpp/include
+INC =  -I../../commonsrc/include -I../../commonsrc/deps/ $(REDISINC) $(PROTOINC) $(JSONINC)
+OBJ=./.obj
+BIN=.
+SRC=.
+LIB_DIR=-L../../commonsrc/libs
+LDFLAG=-lQCool -lmuduo_base -lmuduo_net -lmuduo_http -ljson -lpthread -Wl,-Bstatic -lhiredis -lprotobuf -Wl,-Bdynamic -Wl,--as-needed
+LD=g++
+
+TARGET= thread_test
+
+TARGETOBJS=$(OBJ)/thread_test.o 
+           
+
+all:createdir MakeTarget
+
+createdir:
+	test -d $(OBJ) || mkdir -p $(OBJ)
+
+clean:
+	rm -f $(BIN)/$(TARGET)
+	rm -f $(OBJ)/*
+
+	
+$(OBJ)/thread_test.o:$(SRC)/thread_test.cpp
+	$(CXX) $(CFLAG) $(INC) $(SRC)/thread_test.cpp -o $(OBJ)/thread_test.o
+		
+		
+		
+#-------------LINK------------------------------
+
+MakeTarget:$(TARGETOBJS)
+	$(LD) $(TARGETOBJS) -o $(TARGET) $(LIB_DIR) $(LDFLAG)  

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Data">
+      <UniqueIdentifier>{e0d090cc-3af3-4312-9d91-e1a37c4d1dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{52a9e008-4f8f-4171-9f97-290db0335b5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{9607b19f-3275-4e1d-8674-2a5dbcd34125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{907ed1d4-9a0d-44bc-a9c3-67620427de66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proto">
+      <UniqueIdentifier>{4c170583-8ddb-4071-bae3-c7e8533c19c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tower">
+      <UniqueIdentifier>{635aea1a-1a5d-40be-ad5a-6168068c8b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{80c17d35-d129-44f4-ba7a-128916e2cf0f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\logic_svr\data_cache.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\logic_svr\chat_module.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\logic_svr\login_module.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\logic_svr\map_module.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\logic_svr\logic_main.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\logic_svr\logic_manager.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\logic_svr\logic_module_manager.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\logic_svr\logic_thread.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\proto\chat.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\proto\login.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\proto\move.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\proto\server.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\proto\task.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\logic_svr\tower_aoi.cpp">
+      <Filter>tower</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\logic_svr\game_debug.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\logic_svr\data_cache.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\define_game_map.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\define_logic_data.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\define_module_data.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\chat_module.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\login_module.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\map_module.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\logic_manager.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\logic_module_manager.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\logic_thread.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proto\chat.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proto\login.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proto\move.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proto\package_cmd.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proto\server.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\proto\task.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\tower.h">
+      <Filter>tower</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\tower_aoi.h">
+      <Filter>tower</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\logic_svr\game_debug.h">
+      <Filter>test</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

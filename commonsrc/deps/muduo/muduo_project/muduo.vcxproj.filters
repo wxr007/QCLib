@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{6c02b809-8e59-45b5-870c-1869b75b219e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\test">
+      <UniqueIdentifier>{97cf1948-17ec-40f1-8fca-9a349dd5b5eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{968caef1-88ec-4846-9f56-79acecce55f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\tests">
+      <UniqueIdentifier>{097e00b1-e3bb-4770-9c61-06cb79eb9c37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\http">
+      <UniqueIdentifier>{5084e61e-6c87-4f0c-89df-1541b4186d03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\http\tests">
+      <UniqueIdentifier>{c73dc928-3f51-4d7e-977e-de46b31f993e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\http2">
+      <UniqueIdentifier>{c030cb37-d9e4-4a15-b127-f9c96170b525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\http2\test">
+      <UniqueIdentifier>{9a83b365-5958-4409-bbe8-eaa4f74064cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\base\AsyncLogging.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Condition.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\CountDownLatch.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Date.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Exception.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\FileUtil.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\LogFile.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Logging.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\LogStream.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\ProcessInfo.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Thread.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\ThreadPool.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\Timestamp.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\TimeZone.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\AsyncLogging_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Atomic_unittest.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\BlockingQueue_bench.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\BlockingQueue_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\BoundedBlockingQueue_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Date_unittest.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Exception_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\FileUtil_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Fork_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\GzipFile_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\LogFile_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Logging_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\LogStream_bench.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\LogStream_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Mutex_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\ProcessInfo_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Singleton_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\SingletonThreadLocal_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Thread_bench.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Thread_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\ThreadLocal_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\ThreadLocalSingleton_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\ThreadPool_test.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\Timestamp_unittest.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\tests\TimeZone_unittest.cc">
+      <Filter>base\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\Acceptor.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\boilerplate.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\Buffer.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\Channel.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\Connector.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\EventLoop.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\EventLoopThread.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\EventLoopThreadPool.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\InetAddress.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\Poller.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\Socket.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\SocketsOps.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\TcpClient.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\TcpConnection.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\TcpServer.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\Timer.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\TimerQueue.cc">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\Buffer_unittest.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\EchoClient_unittest.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\EchoServer_unittest.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\EventLoop_unittest.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\EventLoopThread_unittest.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\EventLoopThreadPool_unittest.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\InetAddress_unittest.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\TcpClient_reg1.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\TcpClient_reg2.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\TcpClient_reg3.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\TimerQueue_unittest.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\tests\ZlibStream_unittest.cc">
+      <Filter>net\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\http\HttpResponse.cc">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\http\HttpServer.cc">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\http\tests\HttpRequest_unittest.cc">
+      <Filter>net\http\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\http\tests\HttpServer_test.cc">
+      <Filter>net\http\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\http2\GateWaySvr.cpp">
+      <Filter>net\http2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\http2\MyHttpServer.cpp">
+      <Filter>net\http2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\http2\MyTcpClient.cpp">
+      <Filter>net\http2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\http2\MyTcpServer.cpp">
+      <Filter>net\http2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\http2\test\httpsvr_test.cpp">
+      <Filter>net\http2\test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\base\AsyncLogging.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Atomic.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\BlockingQueue.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\BoundedBlockingQueue.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Condition.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\copyable.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\CountDownLatch.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\CurrentThread.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Date.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Exception.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\FileUtil.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\GzipFile.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\LogFile.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Logging.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\LogStream.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Mutex.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\ProcessInfo.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Singleton.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\StringPiece.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Thread.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\ThreadLocal.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\ThreadLocalSingleton.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\ThreadPool.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Timestamp.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\TimeZone.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\Types.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\WeakCallback.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\Acceptor.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\boilerplate.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\Buffer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\Callbacks.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\Channel.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\Connector.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\Endian.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\EventLoop.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\EventLoopThread.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\EventLoopThreadPool.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\InetAddress.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\Poller.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\Socket.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\SocketsOps.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\TcpClient.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\TcpConnection.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\TcpServer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\Timer.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\TimerId.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\TimerQueue.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\ZlibStream.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http\HttpContext.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http\HttpRequest.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http\HttpResponse.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http\HttpServer.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http2\GateWaySvr.hpp">
+      <Filter>net\http2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http2\MyHttpServer.hpp">
+      <Filter>net\http2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http2\MyTcpClient.hpp">
+      <Filter>net\http2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http2\MyTcpServer.hpp">
+      <Filter>net\http2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http2\test\GolbalDefine.h">
+      <Filter>net\http2\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\http2\test\httpDefine.h">
+      <Filter>net\http2\test</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
